@@ -90,4 +90,4 @@ function checkDarkMode(){
     }
 }
 
-readExampleFile(`../README.md`);
+readExampleFile(`https://manishdait.github.io/java-by-example/README.md`);
