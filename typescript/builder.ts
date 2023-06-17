@@ -41,7 +41,7 @@ function readTextFile(file:string)
 }  
 
 function reload(path:string){
-    window.location.href = `http://127.0.0.1:5501/template/snippet.html#${path}`;
+    window.location.href = `https://manishdait.github.io/java-by-example/template/snippet.html#${path}`;
     refresh();
 }
 function refresh(){
@@ -89,4 +89,4 @@ function change_darkMode(){
 }
 
 
-readTextFile(`../README.md`);
+readTextFile(`https://manishdait.github.io/java-by-example/README.md`);
