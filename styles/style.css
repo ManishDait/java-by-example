@@ -1,0 +1,125 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Georgia', serif;
+}
+
+:root{
+    --bg-color: rgb(255, 255, 255);
+    --text-color: rgb(7, 7, 7);
+    --secondary-color: rgb(177, 175, 175);
+    --primary-color: rgb(243,243,243);
+}
+html{
+    background-color: var(--bg-color);
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.4em 0px;
+}
+h2{
+    font-size: 1em;
+    color: var(--text-color);
+}
+a{
+    color: var(--text-color);
+}
+p{
+    font-size: 1em;
+    color: var(--text-color);
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+}
+pre{
+    min-width: 30em;
+}
+code{
+    border-radius: 5px;
+}
+
+.container{
+    display: flex;
+    max-width: 28em;
+    flex-direction: column;
+    gap: 1.2em;
+}
+
+.title{
+    text-decoration: none !important;
+    font-size: 2em;
+}
+
+.container-c{
+    display: flex;
+    padding: 2em;
+    flex-direction: column;
+    max-width: 65em;
+    gap: 1.4em;
+}
+
+.code-c{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.code-c p, .container-c p{
+    width: 28em;
+}
+
+.copyright{
+    color: var(--secondary-color);
+    font-size: 0.9em;
+}
+
+.material-icons{
+    font-size: 1.2em !important;
+    padding: 0.5em;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.material-icons:hover{
+    background-color: var(--primary-color);
+}
+
+.material-symbols-outlined{
+    font-size: 1.4em !important;
+    text-align: end; 
+    width: 90%; 
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+
+@media screen and (max-width: 900px) {
+    body{
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    body{
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 365px) {
+    body{
+        font-size: 0.6rem;
+    }
+}
+
+@media screen and (max-width: 328px) {
+    body{
+        font-size: 0.5rem;
+    }
+}

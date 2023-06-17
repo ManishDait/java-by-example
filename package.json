@@ -1,0 +1,13 @@
+{
+  "name": "java-by-example",
+  "version": "1.0.0",
+  "description": "A website with various java program snippet.",
+  "scripts": {
+    "build":"npx tsc"
+  },
+  "author": "Manish Dait",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.1.3"
+  }
+}

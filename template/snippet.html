@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../styles/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/a11y-dark.min.css">
+    <link rel="icon" type="image/ico" href="../assets/icon.ico">
+    <script defer src="../lib/builder.js"></script>
+    <title>Java by Example</title>
+</head>
+<body onload="darkMode()">
+    <span class="material-symbols-outlined" id="dark_toggle" onclick="change_darkMode()">wb_sunny</span>
+    <div class="container-c">
+            <a href="/" class="title" id="title">Java by Example</a>
+            <h2 id="subtitle">Hello World</h2>  
+            
+            <div class="code-c"> 
+                <div>
+                    <p style="text-align: end;"><i id="copy" class="material-icons" title="copy" onclick="copyText()">content_copy</i></p>
+                <pre>
+                    <code id="code" class="language-java">
+public class Hello{
+    public static void main(String[] args){
+        System.out.println("Hello World");
+    }
+}
+                    </code>
+                </pre>
+                </div>          
+            </div>
+
+            <p id="next"></p>
+            <p class="copyright">by <u>Manish Dait</u> | <a style="color: rgb(177, 175, 175);" href="https://github.com/ManishDait/java-by-example">source</a></p>
+    </div>
+
+    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script>hljs.highlightAll()</script>
+</body>
+</html>

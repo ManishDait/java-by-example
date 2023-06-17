@@ -1,0 +1,13 @@
+declare let code: any;
+declare let title: any;
+declare let subtitle: any;
+declare let next: any;
+declare let copy: any;
+declare let dark_toggle: HTMLElement | null;
+declare let path: string;
+declare function readTextFile(file: string): void;
+declare function reload(path: string): void;
+declare function refresh(): void;
+declare function copyText(): void;
+declare function darkMode(): void;
+declare function change_darkMode(): void;
