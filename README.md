@@ -91,7 +91,7 @@ public static boolean isPrime(int num){
 }
 ```
 
-### Armstrong NUmber
+### Armstrong Number
 ```java
 public static boolean isArmstrong(int num){
     int temp = num;
