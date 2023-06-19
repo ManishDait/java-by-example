@@ -111,6 +111,17 @@ public static boolean isArmstrong(int num){
 } 
 ```
 
+### Factorial Of Number
+```java
+public static int factorial(int num){
+    int fact = 1;
+    for(int i = 1; i <= num; i++){
+        fact *= i;
+    }
+    return fact;
+} 
+```
+
 ## Patterns
 
 ### Rectangle
