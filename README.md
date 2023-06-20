@@ -122,6 +122,13 @@ public static int factorial(int num){
 } 
 ```
 
+### Sum of N Number
+```java
+public static int sumOfN(int num){
+    return num*(num+1)/2;
+} 
+```
+
 ## Patterns
 
 ### Rectangle
