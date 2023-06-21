@@ -1,10 +1,8 @@
-package com.javabyexample.alhorithms;
+package com.javabyexample.algorithms;
 
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
-
-import com.javabyexample.algorithms.BinarySearchSnippet;
 
 public class BinarySearchSnippetTest {
     @Test
