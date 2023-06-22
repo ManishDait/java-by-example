@@ -219,3 +219,11 @@ public static int countCharacter(String str){
     return str.length();
 } 
 ```
+
+### Reverse String
+```java
+public static String reverseString(String str){
+    StringBuilder s = new StringBuilder(str);
+    return s.reverse().toString();
+}
+```
