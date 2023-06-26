@@ -1,5 +1,5 @@
 # Java By Example
-Java by Example is a collection of various code snippet in java.
+Java by Example offers a collection of straightforward code snippets for various program in Java.
 
 ## Algorithms
 
