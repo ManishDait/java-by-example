@@ -264,3 +264,17 @@ public static boolean checkAnagram(String a, String b) {
     return Arrays.equals(str1, str2);
 }
 ```
+
+### Count Occurence of Character
+```java
+public static int countOccurence(String str, char c){
+    int count = 0;
+
+    for(int i = 0; i < str.length(); i ++){
+        if(str.charAt(i) == c)
+            count++;
+    }
+
+    return count;
+}
+```
