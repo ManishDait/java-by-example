@@ -24,11 +24,33 @@
 
 package com.javabyexample.patterns;
 
+import static org.junit.Assert.assertEquals;
+
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
+import org.junit.Test;
+
 /**
  * Test for Java-By-Example code Library.
  * 
  */
 
 public class StarPyramidSnippetTest {
-    
+  /**
+   * Test for {@link StarPyramidSnippet#printPyramid(int)}.
+   */
+
+  @Test
+  public void testPrintPyramid() {
+    ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+    PrintStream printStream = new PrintStream(outputStream);
+    System.setOut(printStream);
+
+    StarPyramidSnippet.printPyramid(5);
+
+    String printedOutput = outputStream.toString();
+    String expectedOutput = "    *    \n   ***   \n  *****  \n ******* \n*********\n";
+
+    assertEquals(expectedOutput, printedOutput);
+  }
 }
