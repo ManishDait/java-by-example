@@ -22,26 +22,27 @@
  * SOFTWARE.
  */
 
-package com.javabyexample.strings;
+package com.javabyexample.string;
 
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
-
-import com.javabyexample.string.ReverseStringSnippet;
 
 /**
  * Test for Java-By-Example code Library.
  * 
  */
 
-public class ReverseStringSnippetTest {
+public class AnagramSnippetTest {
   /**
-   * Test for {@link ReverseStringSnippet#reverseString(String)}.
+   * Test for {@link AnagramSnippet#checkAnagram(String, String)}.
    */
   @Test
-  public void testReverseString() {
-    String expected = "olleH";
-    assertEquals(expected, ReverseStringSnippet.reverseString("Hello"));
+  public void testAnagram() {
+    boolean expected = true;
+    assertEquals(expected, AnagramSnippet.checkAnagram("care", "race"));
+
+    boolean expected2 = false;
+    assertEquals(expected2, AnagramSnippet.checkAnagram("cat", "eat"));
   }
 }

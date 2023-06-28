@@ -22,29 +22,24 @@
  * SOFTWARE.
  */
 
-package com.javabyexample.strings;
+package com.javabyexample.string;
 
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
-
-import com.javabyexample.string.OccurenceOfCharacterSnippet;
 
 /**
  * Test for Java-By-Example code Library.
  * 
  */
 
-public class OccurenceOfCharacterSnippetTest {
+public class CharacterCountSnippetTest {
   /**
-   * Test for {@link OccurenceOfCharacterSnippet#countOccurence(String, char)}.
+   * Test for {@link CharacterCountSnippet#countCharacter(String)}.
    */
   @Test
-  public void testCountOccurence() {
-    int expected = 2;
-    assertEquals(expected, OccurenceOfCharacterSnippet.countOccurence("Hello", 'l'));
-
-    int expected2 = 0;
-    assertEquals(expected2, OccurenceOfCharacterSnippet.countOccurence("Hello", 'i'));
+  public void testCharacterCount() {
+    int expected = 5;
+    assertEquals(expected, CharacterCountSnippet.countCharacter("Hello"));
   }
 }
