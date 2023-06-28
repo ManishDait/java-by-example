@@ -4,10 +4,10 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-public class SumOfNNumberSnippetTest {
+public class SumOfnNumberSnippetTest {
    @Test
    public void testSumOfN(){
     int expected = 21;
-    assertEquals(expected, SumOfNNumberSnippet.sumOfN(6));
+    assertEquals(expected, SumOfnNumberSnippet.sumOfN(6));
    } 
 }
