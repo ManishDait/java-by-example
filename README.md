@@ -167,65 +167,66 @@ Java by Example offers a collection of straightforward code snippets for various
 
 ### Rectangle
 ```java
-/*
-   ****
-   ****
-   ****
-   **** 
-*/
-public static void printRectangle(int n){
-    for(int i = 0; i < n; i++){
-        for(int j = 0; j < n; j++){
-            System.out.print("*");
-        }
-        System.out.println("");
+  /*
+    ****
+    ****
+    ****
+    **** 
+  */
+  public static void printRectangle(int n) {
+    for (int i = 0; i < n; i++) {
+      for (int j = 0; j < n; j++) {
+        System.out.print("*");
+      }
+      System.out.println("");
     }
-} 
+  }
 ```
 
 ### Right Angle Triangle
 ```java
-/*
-    *
-    **
-    ***
-    ****
-*/
-public static void printRightAngleTriangle(int n){
-    for(int i = 0; i < n; i++){
-        for(int j = 0; j <= i; j++){
-            System.out.print("*");
-        }
+  /*
+      *
+      **
+      ***
+      ****
+  */
+  public static void printRightAngleTriangle(int n) {
+    for (int i = 0; i < n; i++) {
+      for (int j = 0; j <= i; j++) {
+        System.out.print("*");
+      }
 
-        System.out.println("");
+      System.out.println("");
     }
-}
+  }
 ```
 
 ### Star Pyramid
 ```java
-/*
-      *
-     ***
-    *****
-   *******
-*/
-public static void printPyramid(int n){
-        for(int i = 0; i < n; i++){
-        for(int j = 0; j < n-i-1; j++){
-            System.out.print(" ");
-        }
+  /*
+       *
+      ***
+     *****
+    *******
+  */
+  public static void printPyramid(int n) {
+    for (int i = 0; i < n; i++) {
+      for (int j = 0; j < n - i - 1; j++) {
+        System.out.print(" ");
+      }
 
-        for(int j = 0; j < 2*i+1; j++){
-            System.out.print("*");
-        }
+      for (int j = 0; j < 2 * i + 1; j++) {
+        System.out.print("*");
+      }
+            
+      for (int j = 0; j < n - i - 1; j++) {
+        System.out.print(" ");
+      }
 
-        for(int j = 0; j < n-i-1; j++){
-            System.out.print(" ");
-        }
-        System.out.println("");
+      System.out.println("");
     }
-}
+  }
 ```
 
 ## Strings
