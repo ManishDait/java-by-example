@@ -79,88 +79,88 @@ Java by Example offers a collection of straightforward code snippets for various
 
 ### Reverse a number
 ```java
-public static int reverseNumber(int num) {
+  public static int reverseNumber(int num) {
     int rev = 0;
 
-    while(num != 0){
-        int rem = num % 10;
-        rev = rev * 10 + rem;
-        num /= 10;
+    while (num != 0) {
+      int rem = num % 10;
+      rev = rev * 10 + rem;
+      num /= 10;
     }
 
     return rev;
-} 
+  } 
 ```
 
 ### Palindrome 
 ```java
-public static boolean isPalindrome(int num){
+  public static boolean isPalindrome(int num) {
     int temp = num;
     int rev = 0;
 
-    while(temp != 0){
-        int rem = temp % 10;
-        rev = rev * 10 + rem;
-        temp /= 10;
+    while (temp != 0) {
+      int rem = temp % 10;
+      rev = rev * 10 + rem;
+      temp /= 10;
     }
 
     return num == rev;
-} 
+  }
 ```
 
 ### Prime Number
 ```java
-public static boolean isPrime(int num){
-    if(num <= 1){
-        return false;
+  public static boolean isPrime(int num) {
+    if (num <= 1) {
+      return false;
     }
 
-    for(int i = 2; i <= num / 2; i++){
-        if(num % i == 0){
-            return false;
-        }
+    for (int i = 2; i <= num / 2; i++) {
+      if (num % i == 0) {
+        return false;
+      }
     }
 
     return true;
-}
+  }
 ```
 
 ### Armstrong Number
 ```java
-public static boolean isArmstrong(int num){
+  public static boolean isArmstrong(int num) {
     int temp = num;
-    int len = (int)Math.log10(temp)+1;
+    int len = (int) Math.log10(temp) + 1;
     int newNum  = 0;
 
-    while(num != 0){
-        int rem = num%10;
-        newNum += Math.pow(rem, len);
-        num /= 10;
+    while (num != 0) {
+      int rem = num % 10;
+      newNum += Math.pow(rem, len);
+      num /= 10;
     }
 
-    if(newNum == temp){
-        return true;
+    if (newNum == temp) {
+      return true;
     }
     return false;
-} 
+  }
 ```
 
 ### Factorial Of Number
 ```java
-public static int factorial(int num){
+  public static int factorial(int num) {
     int fact = 1;
-    for(int i = 1; i <= num; i++){
-        fact *= i;
+    for (int i = 1; i <= num; i++) {
+      fact *= i;
     }
     return fact;
-} 
+  } 
 ```
 
 ### Sum of N Number
 ```java
-public static int sumOfN(int num){
-    return num*(num+1)/2;
-} 
+  public static int sumOfN(int num) {
+    return num * (num + 1) / 2;
+  } 
 ```
 
 ## Patterns
