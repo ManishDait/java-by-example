@@ -5,74 +5,73 @@ Java by Example offers a collection of straightforward code snippets for various
 
 ### BubbleSort
 ```java
-public static int[] bubbleSort(int[] arr){
-    for(int i = 0; i < arr.length-1; i++){
-        for(int j = i+1; j < arr.length; j++){
-            if(arr[i] > arr[j]){
-                int temp = arr[i];
-                arr[i] = arr[j];
-                arr[j] = temp;
-            }
+  public static int[] bubbleSort(int[] arr) {
+    for (int i = 0; i < arr.length - 1; i++) {
+      for (int j = i + 1; j < arr.length; j++) {
+        if (arr[i] > arr[j]) {
+          int temp = arr[i];
+          arr[i] = arr[j];
+          arr[j] = temp;
         }
+      }
     }
         
     return arr;
-}
+  }
 ```
 
 ### SelectionSort
 ```java
-public static int[] selectionSort(int[] arr){
-    for(int i = 0; i < arr.length-1; i++){
-        int small = i;
-        for(int j = i+1; j < arr.length; j++){
-            if(arr[j] < arr[small]){
-                small = j;
-            }
+  public static int[] selectionSort(int[] arr) {
+    for (int i = 0; i < arr.length - 1; i++) {
+      int small = i;
+      for (int j = i + 1; j < arr.length; j++) {
+        if (arr[j] < arr[small]) {
+          small = j;
         }
-        int temp = arr[i];
-        arr[i] = arr[small];
-        arr[small] = temp;
+      }
+      int temp = arr[i];
+      arr[i] = arr[small];
+      arr[small] = temp;
     }
     return arr;
-}
+  }
 ```
 
 ### BinaySearch
 ```java
-public static int binarySearch(int arr[], int target){
+  public static int binarySearch(int[] arr, int target) {
     int start = 0;
-    int end = arr.length-1;
+    int end = arr.length - 1;
     
-    while(start <= end){
-        int mid = (2*start + end -start) / 2;
+    while (start <= end) {
+      int mid = (2 * start + end - start) / 2;
 
-        if(arr[mid] == target){
-            return mid;
-        }
-        if(target > arr[mid]){
-            start = mid+1;
-        }
-        else if(target < arr[mid]){
-            end = mid-1;
-        }
+      if (arr[mid] == target) {
+        return mid;
+      }
+      if (target > arr[mid]) {
+        start = mid + 1;
+      } else if (target < arr[mid]) {
+        end = mid - 1;
+      }
     }
     
     return -1;
-} 
+  } 
 ``` 
 
 ### LinearSearch
 ```java
-public static int linearSearch(int arr[], int target){
-    for(int i = 0; i < arr.length; i++){
-        if(arr[i] == target){
-            return i;
-        }
+  public static int linearSearch(int[] arr, int target) {
+    for (int i = 0; i < arr.length; i++) {
+      if (arr[i] == target) { 
+        return i;
+      }
     }
     
     return -1;
-} 
+  } 
 ```
 
 
