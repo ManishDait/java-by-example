@@ -233,48 +233,49 @@ Java by Example offers a collection of straightforward code snippets for various
 
 ### Character Count
 ```java
-public static int countCharacter(String str){
+  public static int countCharacter(String str) {
     return str.length();
-} 
+  }
 ```
 
 ### Reverse String
 ```java
-public static String reverseString(String str){
+  public static String reverseString(String str) {
     StringBuilder s = new StringBuilder(str);
     return s.reverse().toString();
-}
+  }
 ```
 
 ### Anagram Check
 ```java
-public static boolean checkAnagram(String a, String b) {
-    int str1[] = new int[256];
-    int str2[] = new int[256];
+  public static boolean checkAnagram(String a, String b) {
+    int[] str1 = new int[256];
+    int[] str2 = new int[256];
 
-    if(a.length() != b.length()){
-        return false;
+    if (a.length() != b.length()) {
+      return false;
     }
 
-    for(int i = 0; i < a.length(); i ++){
-        str1[a.charAt(i)]++;
-        str2[b.charAt(i)]++;
+    for (int i = 0; i < a.length(); i++) {
+      str1[a.charAt(i)]++;
+      str2[b.charAt(i)]++;
     }
 
     return Arrays.equals(str1, str2);
-}
+  }
 ```
 
 ### Count Occurence of Character
 ```java
-public static int countOccurence(String str, char c){
+  public static int countOccurence(String str, char c) {
     int count = 0;
 
-    for(int i = 0; i < str.length(); i ++){
-        if(str.charAt(i) == c)
-            count++;
+    for (int i = 0; i < str.length(); i++) {
+      if (str.charAt(i) == c) {
+        count++;
+      }
     }
 
     return count;
-}
+  }
 ```
