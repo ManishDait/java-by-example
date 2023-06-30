@@ -91,6 +91,19 @@ Java by Example offers a collection of straightforward code snippets for various
   }
 ```
 
+### Find sum of array
+```java
+  public static int sumOfArray(int[] arr) {
+    int sum = 0;
+
+    for (int i : arr) {
+      sum += i;
+    }
+
+    return sum;
+  }
+```
+
 
 ## Numbers
 
