@@ -74,6 +74,23 @@ Java by Example offers a collection of straightforward code snippets for various
   } 
 ```
 
+## Array
+
+### Find maximum number in array
+```java
+  public static int maxElement(int[] arr) {
+    int max = Integer.MIN_VALUE;
+
+    for (int i : arr) {
+      if (i > max) {
+        max = i;      
+      }
+    }
+
+    return max;
+  }
+```
+
 
 ## Numbers
 
