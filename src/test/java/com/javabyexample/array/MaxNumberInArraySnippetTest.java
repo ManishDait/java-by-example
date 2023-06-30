@@ -34,7 +34,10 @@ import org.junit.Test;
  */
 
 public class MaxNumberInArraySnippetTest {
-
+  
+  /**
+   * Test for {@link MaxNumberInArraySnippet#maxElement(int[])}.
+   */
   @Test
   public void testMaxNumberArray() {
     int[] arr = {1, 45, 2, 100, 12, 65};
