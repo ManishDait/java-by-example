@@ -104,6 +104,19 @@ Java by Example offers a collection of straightforward code snippets for various
   }
 ```
 
+### Find mean of array
+```java
+  public static double meanOfArray(int[] arr) {
+    int sum = 0;
+
+    for (int i : arr) {
+      sum += i;
+    }
+
+    return sum / arr.length;
+  }
+```
+
 
 ## Numbers
 
