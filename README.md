@@ -257,6 +257,13 @@ Java by Example offers a collection of straightforward code snippets for various
 
 ### Unfill Rectangle
 ```java
+  /*
+      *****
+      *   *
+      *   *
+      *   *
+      *****
+  */
   public static void  printUnfillRectangle(int n) {
     for (int i = 0; i < n; i++) {
       for (int j = 0; j < n; j++) {
