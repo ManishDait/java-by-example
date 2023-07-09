@@ -228,6 +228,21 @@ Java by Example offers a collection of straightforward code snippets for various
   } 
 ```
 
+### Factors of Number
+```java
+  public static List<Integer> factorsOfN(int n) {
+    List<Integer> fact = new ArrayList<>();
+
+    for (int i = 1; i <= n; i++) {
+      if (n % i == 0) {
+        fact.add(i);
+      }
+    }
+
+    return fact;
+  }
+```
+
 ### Sum of N Number
 ```java
   public static int sumOfN(int num) {
