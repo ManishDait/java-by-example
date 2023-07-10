@@ -37,6 +37,9 @@ import org.junit.Test;
 
 public class FactorsOfnSnippetTest {
   
+  /**
+   * Test for {@link FactosOfnSnippet#factorOfN(int n)}.
+   */
   @Test
   public void testFactorOfN() {
     List<Integer> expected = new ArrayList<Integer>();
