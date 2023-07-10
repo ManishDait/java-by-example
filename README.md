@@ -243,6 +243,17 @@ Java by Example offers a collection of straightforward code snippets for various
   }
 ```
 
+### Nth Fibonacci Number
+```java
+  public static int fibonacci(int n) {
+    if (n == 0 || n == 1) {
+      return n == 0 ? 0 : 1;
+    }
+
+    return fibonacci(n - 2) + fibonacci(n - 1);
+  }
+```
+
 ### Sum of N Number
 ```java
   public static int sumOfN(int num) {
