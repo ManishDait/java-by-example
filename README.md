@@ -404,3 +404,14 @@ Java by Example offers a collection of straightforward code snippets for various
     return count;
   }
 ```
+
+### Check presence of subString in String
+```java
+  public static boolean containsSubString(String string, String subString) {
+    if (string.contains(subString)) {
+      return true;
+    }
+
+    return false;
+  }
+```
