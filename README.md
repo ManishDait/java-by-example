@@ -164,6 +164,14 @@ Java by Example offers a collection of straightforward code snippets for various
   } 
 ```
 
+### Random Number
+```java
+  public static int generateRandomNumber(int min, int max) {
+    Random random = new Random();
+    return random.nextInt(max - min + 1) + min;
+  }
+```
+
 ### Palindrome 
 ```java
   public static boolean isPalindrome(int num) {
